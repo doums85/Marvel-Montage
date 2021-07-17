@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Marvel Montage</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="side" id="side1">
+                <video src="./videos.mp4" autoplay loop controls></video>
+            </div>
+            <div class="side" id="side2">
+                <video src="./videos.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+        <div class="content">
+            <h2> Marvel Montage</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut commodi, saepe, voluptatibus vero iusto ad
+                voluptates eum laborum, tempore incidunt voluptate officia quas? Eum, repellendus, nam esse, voluptatem
+                sit officia in et fuga reiciendis voluptas explicabo ipsam adipisci quod laudantium nobis quam
+                doloremque non! Sunt laudantium, ducimus rerum doloribus cupiditate repellendus vel amet fuga nesciunt
+                corporis asperiores voluptate accusantium fugit numquam quia! Architecto id molestiae sunt error
+                recusandae odio eum exercitationem harum, iusto commodi eveniet odit possimus quia ipsum consectetur
+                facilis, facere earum. Cupiditate perferendis minus repudiandae maiores deserunt architecto, culpa
+                nulla, sapiente perspiciatis reiciendis cumque accusamus ut doloribus quidem debitis eveniet sed
+                repellendus aut maxime molestiae vero magnam ducimus sunt. Unde ad quia debitis iure sequi sit suscipit
+                modi amet ipsum placeat quas fuga sint nostrum labore cupiditate optio, aliquam iusto similique fugit?
+                Modi ipsa sit praesentium adipisci, consectetur aliquam nihil accusantium repudiandae exercitationem
+                natus sequi excepturi, iusto ducimus!</p>
+        </div>
+    </main>
+
+    <footer>
+       <p>Github: <a target="_blank" href="https://github.com/doums85/Marvel-Montage">Go to Github</a></p> 
+    </footer>
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', () =>{
+            side1.style.left= `-${window.pageYOffset}px`;
+            side2.style.left= `${window.pageYOffset}px`;
+        })
+    </script>
+</body>
+
+</html>
